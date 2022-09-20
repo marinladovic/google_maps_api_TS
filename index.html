@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Select And Share a Place</title>
+    <link rel="stylesheet" href="app.css" />
+    <!-- Enter your Google API key here -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY"
+      defer
+    ></script>
     <script src="dist/bundle.js" defer></script>
   </head>
   <body>
-    <h2>Testing</h2>
+    <div id="map">
+      <p>Please enter an address!</p>
+    </div>
+    <form>
+      <input type="text" id="address" />
+      <button type="submit">Lookup Address</button>
+    </form>
   </body>
 </html>
